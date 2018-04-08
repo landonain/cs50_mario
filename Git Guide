@@ -1,0 +1,11 @@
+git add . # adds all the changed files into your que
+git init # starts a new repository in the folder you are in
+git clone <server> # grabs the remote repository and duplicates it locally
+git remote add origin <server> # pushes local repository to remote location
+git config --global user.email "landogriffin860@gmail.com" # sets email for git profile
+git config --global user.name "landonain" #sets user name
+git status # shows the changes pending
+git commit -m "This is a message added to the changes" # commits the changes for pushing to the server
+git push origin master # pushes the changes to the remote master branch of git
+
+gcc -o filename filename.ext # compiler for c in linux
