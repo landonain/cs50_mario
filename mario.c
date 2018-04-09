@@ -10,9 +10,15 @@ int main(void)
 
 		if (i <= 23 && i > 0)
 		{
-			for (int j = 0;j <= i; j++)
+			//row iteration
+			for (int j = 0;j < i; j++)
 			{
-				printf("#\n");
+				//column iteration
+				for (int r = 0; r < i; r++)
+				{
+					printf("#");
+				}
+				printf("\n");
 			}
 			//printf("%d\n", i);
 			//printf("%d\n", j);
