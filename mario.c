@@ -11,13 +11,21 @@ int main(void)
 		if (i <= 23 && i > 0)
 		{
 			//row iteration
+			int k = i-2;
 			for (int j = 0;j < i; j++)
 			{
 				//column iteration
-				for (int r = 0; r < i; r++)
+				int r = 0;
+				for (r <= i && r <= k; r++;)
+				{
+					printf(" ");
+				}
+				for (r <= i; r++;)
 				{
 					printf("#");
+
 				}
+				k--;
 				printf("\n");
 			}
 			//printf("%d\n", i);
