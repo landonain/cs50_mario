@@ -11,21 +11,22 @@ int main(void)
 		if (i <= 23 && i > 0)
 		{
 			//row iteration
-			int k = i-2;
+			int k = i-2; // this takes the spaces out of the shape with one index every loop
+			int g = 1;  // This will start off with with the two blocks and index one per loop
 			for (int j = 0;j < i; j++)
 			{
 				//column iteration
-				int r = 0;
-				for (r <= i && r <= k; r++;)
+				for (int r = 0; r <= i && r <= k; r++)
 				{
 					printf(" ");
 				}
-				for (r <= i; r++;)
+				for (int r = 0; r <= g; r++)
 				{
 					printf("#");
-
+					//printf("%d", r);
 				}
 				k--;
+				g++;
 				printf("\n");
 			}
 			//printf("%d\n", i);
