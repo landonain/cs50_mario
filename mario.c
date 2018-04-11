@@ -8,8 +8,12 @@ int main(void)
 	{
 	int i = get_int("Integer: ");
 
-		if (i <= 23 && i > 0)
+		if (i <= 23 && i >= 0)
 		{
+
+			if (i == 0){
+				break;
+			}
 			//row iteration
 			int k = i-2; // this takes the spaces out of the shape with one index every loop
 			int g = 1;  // This will start off with with the two blocks and index one per loop
